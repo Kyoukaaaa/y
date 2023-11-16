@@ -1,0 +1,93 @@
+ .goog-te-banner-frame {display:none !important;} // Don't show Google Topbar #goog-gt-tt {display:none!important;visibility:hidden!important;}
+
+#google_translate_element {
+
+}
+.goog-te-gadget {
+  font-family: Roboto, 'Open Sans', sans-serif!important;
+  
+  }
+.goog-te-gadget-simple  {
+  background: #FE8114 !important;
+  border: none ;
+  padding: 5px !important;
+  border-radius: 4px!important;
+  font-size: 14px !important;
+	
+  display: block !important;
+  cursor: pointer;
+
+  height: 30px!important;
+    width: auto; 
+}
+.goog-te-menu2 {
+  max-width: 100%;
+  
+}
+.goog-te-menu-value {
+  color: #fff !important;
+  line-height:0px!important;
+  margin-left: 30px !important;
+  position:relative;
+  bottom: 18px;
+  font-weight:700;
+  } 
+}
+.goog-te-menu-value span:nth-child(5) {
+  display:none;
+  
+}
+.goog-te-menu-value span:nth-child(3) {
+  border:none!important;
+  font-family: 'FontAwesome';
+  
+  &:after {
+    font-family: 'FontAwesome';
+    content: "\f0d7";
+    font-size: 1.5rem;
+    vertical-align: -6px;
+	
+	
+  }  
+}
+
+.goog-te-gadget-icon {
+    background-image: url(top_language.png)!important;
+	background-position:center !important;
+	background-size:cover;
+    height: 16px!important;
+    width: auto!important;
+	margin-bottom: 4px;
+	
+}
+
+// ============ HIDE TOP BAR ============ 
+.goog-te-banner-frame.skiptranslate {display: none!important;visibility:hidden!important;} 
+body {top: 0px!important;}
+
+/* ================================== *\
+    Mediaqueries
+\* ================================== */
+@media (max-width: 567px) {
+	#google_translate_element {
+		
+		left: 16px!important;
+		width: 100%!important;
+		goog-te-gadget {
+			width:100%!important;
+		}
+		
+		.goog-te-gadget-simple {
+			width: calc(100% - 32px)!important;
+			text-align: center;
+		}
+		
+	}
+	.goog-te-menu-value {
+  margin-left: 20px !important;
+  display: none !important;
+  }
+}
+
+
+
